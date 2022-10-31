@@ -1,7 +1,4 @@
-const {
-    Thought,
-    Reaction
-} = require('../models');
+const { Thought, Reaction } = require('../models');
 
 const thoughtController = {
     // getting all thoughts
@@ -16,7 +13,7 @@ const thoughtController = {
                 res.status(500).json(err);
             });
     },
-    // getting single user by id
+    // getting single thought by id
     getSingleThought(req, res) {
         Thought.findOne({
                 _id: req.params.thoughtId
@@ -36,7 +33,7 @@ const thoughtController = {
                 res.status(500).json(err);
             });
     },
-    // create new user
+    // create new thought
     createThought({
         body
     }, res) {
@@ -49,7 +46,7 @@ const thoughtController = {
                 res.status(500).json(err);
             });
     },
-    // update existing user
+    // update existing thought
     updateThought(req, res) {
         Thought.findOneAndUpdate({
                 _id: req.params.thoughtId
@@ -62,7 +59,7 @@ const thoughtController = {
                 res.status(500).json(err);
             });
     },
-    // delete a user
+    // delete a thought
     removeThought(req, res) {
         Thought.deleteOne({
                 _id: req.params.thoughtId
@@ -75,7 +72,7 @@ const thoughtController = {
                 res.status(500).json(err);
             });
     },
-    // add a friend to user
+    // add a reaction
     createReaction(req, res) {
         Thought.findOneAndUpdate({
                 _id: req.params.thoughtId
@@ -94,7 +91,7 @@ const thoughtController = {
                 res.status(500).json(err);
             });
     },
-    // remove a friend from user
+    // remove a reaction
     removeReaction(req, res) {
         Thought.findOneAndUpdate({
                 _id: req.params.thoughtId

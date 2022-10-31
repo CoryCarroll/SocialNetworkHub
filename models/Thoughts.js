@@ -4,7 +4,7 @@ const DateFormat = require('../utils/dateFormat');
 
 const thoughtsSchema = new Schema(
     {
-        thoughtText: {
+        thoughtId: {
             type: String,
             required: true,
             maxLength: 280,

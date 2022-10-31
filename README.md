@@ -8,10 +8,9 @@ You are able to install the necessary packages by typing NPM I in the terminal.
 
 # Usage
 
-The following are videos showing the functionality of this server.
+The following are video show the functionality of this server.
 
-
-
+https://drive.google.com/file/d/17w_BGfQHpwgWptu9ouyY0gLM94K-fCEd/view
 
 # License
 

@@ -79,7 +79,7 @@ const userController = {
                 _id: req.params.userId
             }, {
                 $push: {
-                    friends: req.params.friendId
+                    friends: req.params.userId
                 }
             }, {
                 new: true
